@@ -1,0 +1,43 @@
+This is the discovered key mapping for r36s - ArkOS 2.0 (08232024-1 AeUX)
+
+D-PAD
+: up    - w
+: left  - a
+: down  - s
+: right - d
+
+Buttons
+: X - space
+: Y - b
+: B - lshift
+: A - z
+
+FN    - (nil)
+SEL   - esc
+START - return
+
+POWER      - power
+VOLUMEUP   - volumeup
+VOLUMEDOWN - volumedown
+
+L-Stick
+: up    - up
+: left  - left
+: down  - down
+: right - right
+
+R-Stick
+: up    - (nil)
+: left  - (nil)
+: down  - (nil)
+: right - (nil)
+
+Back
+: L1 - l
+: L2 - x
+: R1 - r
+: R2 - y
+
+Extra (manually edit gptokeyb file on console)
+: L3 - 1
+: R3 - 2
