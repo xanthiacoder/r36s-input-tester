@@ -147,7 +147,6 @@ function love.keyreleased( key, scancode )
    elseif scancode == "escape" then
       -- SELECT released
       triggerReport = "SELECT released"
-      love.event.quit()
       miscState[1] = "up"
    elseif scancode == "return" then
       -- START released
@@ -228,7 +227,8 @@ end
 function K.draw()
 
     love.graphics.setFont(mainFont)
-    love.graphics.printf("R36S Input Tester via Love2d by Xanthia (SELECT to Quit)", mainFont, 0,  0, 640, "center")
+    love.graphics.printf("R36S Input Tester via Love2d by Xanthia", mainFont, 0,  0, 640, "center")
+    love.graphics.printf("(HOLD Select + any Face Button to Quit)", mainFont, 0,  18, 640, "center")
     love.graphics.printf(triggerReport, mainFont, 0, 18*4, 640, "center")
     love.graphics.printf("D-Pad Up      : " .. dpadState[1] .. "    Btn X         : " .. fbtnState[1], mainFont, 0, 18*6,  640, "center")
     love.graphics.printf("D-Pad Left    : " .. dpadState[2] .. "    Btn Y         : " .. fbtnState[2], mainFont, 0, 18*7,  640, "center")

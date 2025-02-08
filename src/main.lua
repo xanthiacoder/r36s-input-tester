@@ -62,6 +62,13 @@ end
 -- to make game state changes frame-to-frame
 function love.update(dt)
     frameElapsed = frameElapsed + 1
+	if love.keyboard.isScancodeDown("escape") then
+    		-- SELECT + Face Buttons
+		local faceButtons = love.keyboard.isScancodeDown("space", "b", "lshift", "z")
+		if faceButtons then
+		      love.event.quit()
+		end
+	end
 end
 
 
